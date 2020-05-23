@@ -1,0 +1,38 @@
+MongoDB
+NoSql
+SchemaLess
+
+string
+number   78678 676767.87767 8678678
+boolean
+
+Sno | Hindi | English | Computer 
+1       80     
+2                80
+3                          80
+
+
+JSON> Javascript Object Notation
+key value pair
+[
+    {
+        _id:555
+        sno:1,
+        hindi:80.87,
+        name:'John'
+    },
+    {
+        sno:2,
+        english:80,
+        name:'Ammy'
+    },
+    {
+        sno:3,
+        Computer:80
+    }
+]
+
+SQL         NoSql
+Database    Database
+Table       Collections
+row         document
