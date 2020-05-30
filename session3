@@ -1,0 +1,94 @@
+//Flat
+{
+    "_id":ObjectId(8978797399kdiu9),
+    "name":"John",
+    "city":"newYork" 
+}
+
+//Embeded
+>>>>>One to One
+
+{
+    _id:ObjectId(8978797399kdiu9),
+    name:"John",
+    address:{
+        street:"878 V walking street",
+        city:"newYork" ,
+        pobox:763762
+    }
+}
+
+
+>One to Many
+{
+    _id:ObjectId(8978797399kdiu9),
+    name:"Zoe",
+    address:[
+        {
+            street:"878 V walking street",
+            city:"newYork" ,
+            pobox:763762
+        },
+         {
+            street:"Ev44 WhiteChappel",
+            city:"London" ,
+            pobox:"U66dy"
+        }
+    ]
+}
+
+https://www.percona.com/blog/2019/01/03/mongodb-engines-mmapv1-vs-wiredtiger/
+//////////////////////////////////////
+> Check All database
+  show dbs
+> Go inside Any databse
+   use admin
+> To see all collection 
+  show collections
+> To get all data 
+  db.users.find()
+
+>>>>Create DB<<<<<<
+use edumay
+db.createCollection(students)
+db.students.insert({name:'Ankit',class:'UI'})
+db.students.insert({name:'Aakash',class:'AI'})
+db.students.insert({_id:3,name:'Bhumika',class:'Mongo'})
+db.students.insert({_id:4,name:'Karan',class:'ML'})
+db.students.insert({id:5,name:'Anchal',class:'Node'})
+
+
+> var mystudent = db.getCollection('student')
+> mystudent.find()
+> mystudent
+edumay.student
+> mystudent.insertOne({name:'Shubham',class:'react'})
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("5ed1ccbedebeb04887b63241")
+}
+> db.student.find()
+{ "_id" : ObjectId("5ed1ccbedebeb04887b63241"), "name" : "Shubham", "class" : "react" }
+> mystudent.find()
+{ "_id" : ObjectId("5ed1ccbedebeb04887b63241"), "name" : "Shubham", "class" : "react" }
+> show collections
+student
+students
+
+
+>>>>>>MultiInsert<<<<<<<<
+db.emp.insertMany([
+    {empid:45,name:'John',dept:'Tech'},
+    {empid:46,name:'Zoe',dept:'Fin'},
+    {empid:47,name:'Ammy',dept:'Hr'},
+    {empid:48,name:'Jackson',dept:'Tech'}
+])
+
+db.emp.createIndex({"empid":1},{unique:true})
+
+
+db.emp.insertMany([
+    {empid:49,name:'Sara',dept:'DBA'}
+])
+
+db.student.find().explain()
