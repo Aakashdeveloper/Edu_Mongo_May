@@ -1,0 +1,402 @@
+db.zomoto2.insertMany
+(
+[
+
+    {
+        "id": "18945610",
+        "name": "Ah So Yum",
+        "url": "https://www.zomato.com/ncr/ah-so-yum-golf-course-road-gurgaon?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Plot 679, Saraswati Kunj, Sector 53, Golf Course Road, Gurgaon",
+          "locality": "Golf Course Road",
+          "city": "Gurgaon",
+          "city_id": 1,
+          "latitude": "28.4416780000",
+          "longitude": "77.0944960000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Golf Course Road, Gurgaon"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Chinese, Sushi, Thai, Japanese, Poké, Asian, Malaysian, Momos",
+        "timings": "11am – 11pm (Mon-Sun)",
+        "average_cost_for_two": 700,
+        "price_range": 2,
+        "currency": "Rs.",
+        "highlights": [
+          "Dinner",
+          "Cash",
+          "Takeaway Available",
+          "Debit Card",
+          "Lunch",
+          "Delivery",
+          "Credit Card",
+          "Indoor Seating",
+          "Digital Payments Accepted"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/chains/0/18945610/6d8bb7689275fc07c342f263be7b4c84.jpeg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.4",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.4"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
+          },
+          "votes": "3939"
+        },
+        "all_reviews_count": 783,
+        "photos_url": "https://www.zomato.com/ncr/ah-so-yum-golf-course-road-gurgaon/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "photo_count": 883,
+        "menu_url": "https://www.zomato.com/ncr/ah-so-yum-golf-course-road-gurgaon/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/chains/0/18945610/6d8bb7689275fc07c342f263be7b4c84.jpeg",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18945610",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/ncr/ah-so-yum-golf-course-road-gurgaon/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "phone_numbers": "+91 7303200824, +91 7303200825, 0124 5082342",
+        "establishment": [
+          "Quick Bites"
+        ],
+        "establishment_types": []
+    },
+    {
+        "id": "18198449",
+        "name": "Punjabi Angithi",
+        "url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "32-22, A 4, DDA Market, Paschim Vihar, New Delhi",
+          "locality": "Paschim Vihar",
+          "city": "New Delhi",
+          "city_id": 1,
+          "latitude": "28.6726861364",
+          "longitude": "77.1090091020",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Paschim Vihar, New Delhi"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian, Chinese, Kebab, Rolls, Fast Food",
+        "timings": "10am – 11pm (Mon-Sun)",
+        "average_cost_for_two": 400,
+        "price_range": 1,
+        "currency": "Rs.",
+        "highlights": [
+          "Lunch",
+          "Cash",
+          "Takeaway Available",
+          "Credit Card",
+          "Dinner",
+          "Delivery",
+          "Debit Card",
+          "Free Parking",
+          "Digital Payments Accepted",
+          "Indoor Seating",
+          "Air Conditioned",
+          "Pure Veg"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "4.3",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.3"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
+          },
+          "votes": "73867"
+        },
+        "all_reviews_count": 2934,
+        "photos_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "photo_count": 1661,
+        "menu_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "medio_provider": 1,
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18198449",
+        "is_table_reservation_supported": 1,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "phone_numbers": "011 40191599, +91 9999613673",
+        "establishment": [
+          "Casual Dining"
+        ],
+        "establishment_types": []
+    },
+    {
+
+        "id": "496",
+        "name": "Bikanervala",
+        "url": "https://www.zomato.com/ncr/bikanervala-sector-29-gurgaon?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Plot 3-5, Near Leisure Valley Park, Sector 29, Gurgaon",
+          "locality": "Sector 29",
+          "city": "Gurgaon",
+          "city_id": 1,
+          "latitude": "28.4690343669",
+          "longitude": "77.0636945218",
+          "zipcode": "122002",
+          "country_id": 1,
+          "locality_verbose": "Sector 29, Gurgaon"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Mithai, North Indian, Chinese, Street Food, South Indian, Bakery",
+        "timings": "8 AM to 11 PM",
+        "average_cost_for_two": 600,
+        "price_range": 2,
+        "currency": "Rs.",
+        "highlights": [
+          "Cash",
+          "Lunch",
+          "Credit Card",
+          "Dinner",
+          "Breakfast",
+          "Takeaway Available",
+          "Debit Card",
+          "Delivery",
+          "Desserts and Bakes",
+          "Ticket Restaurant",
+          "Air Conditioned",
+          "Pure Veg",
+          "Sodexo",
+          "Indoor Seating"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/chains/1/491/4a434d4a486295412302ab28dfe40a0a.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.1",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.1"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
+          },
+          "votes": "39505"
+        },
+        "all_reviews_count": 1490,
+        "photos_url": "https://www.zomato.com/ncr/bikanervala-sector-29-gurgaon/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "photo_count": 1698,
+        "menu_url": "https://www.zomato.com/ncr/bikanervala-sector-29-gurgaon/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/chains/1/491/4a434d4a486295412302ab28dfe40a0a.jpg?output-format=webp",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/496",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/ncr/bikanervala-sector-29-gurgaon/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "phone_numbers": "0124 4337777",
+        "establishment": [
+          "Sweet Shop"
+        ],
+        "establishment_types": []
+
+    },
+    {
+      
+        "id": "313106",
+        "name": "Om Sweets & Snacks",
+        "url": "https://www.zomato.com/ncr/om-sweets-snacks-sector-16-faridabad?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "SCO 93-94, Behind Shubham Plaza, Urban Estate, Sector 16, Faridabad",
+          "locality": "Sector 16",
+          "city": "Faridabad",
+          "city_id": 1,
+          "latitude": "28.4130920000",
+          "longitude": "77.3188170000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Sector 16, Faridabad"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian, South Indian, Street Food, Mithai",
+        "timings": "8 AM to 9 PM",
+        "average_cost_for_two": 500,
+        "price_range": 2,
+        "currency": "Rs.",
+        "highlights": [
+          "Dinner",
+          "Cash",
+          "Takeaway Available",
+          "Breakfast",
+          "Lunch",
+          "Delivery",
+          "Credit Card",
+          "Debit Card",
+          "Free Parking",
+          "Indoor Seating",
+          "Desserts and Bakes",
+          "Sodexo",
+          "Air Conditioned"
+        ],
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/6/5056/b0a348b779e34e9e89fea7050b1c29d2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.3",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.3"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
+          },
+          "votes": "39308"
+        },
+        "all_reviews_count": 932,
+        "photos_url": "https://www.zomato.com/ncr/om-sweets-snacks-sector-16-faridabad/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "photo_count": 474,
+        "menu_url": "https://www.zomato.com/ncr/om-sweets-snacks-sector-16-faridabad/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/6/5056/b0a348b779e34e9e89fea7050b1c29d2.jpg",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/313106",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/ncr/om-sweets-snacks-sector-16-faridabad/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "phone_numbers": "0129 4006234, 0129 4006235",
+        "establishment": [
+          "Quick Bites"
+        ],
+        "establishment_types": []
+    }
+]
+)
+
+
+
+
+db.zomato2.insert(
+{
+    "id": "18198449",
+    "name": "Punjabi Angithi",
+    "url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+    "location": {
+      "address": "32-22, A 4, DDA Market, Paschim Vihar, New Delhi",
+      "locality": "Paschim Vihar",
+      "city": "New Delhi",
+      "city_id": 1,
+      "latitude": "28.6726861364",
+      "longitude": "77.1090091020",
+      "zipcode": "",
+      "country_id": 1,
+      "locality_verbose": "Paschim Vihar, New Delhi"
+    },
+    "switch_to_order_menu": 0,
+    "cuisines": "North Indian, Chinese, Kebab, Rolls, Fast Food",
+    "timings": "10am – 11pm (Mon-Sun)",
+    "average_cost_for_two": 400,
+    "price_range": 1,
+    "currency": "Rs.",
+    "highlights": [
+      "Lunch",
+      "Cash",
+      "Takeaway Available",
+      "Credit Card",
+      "Dinner",
+      "Delivery",
+      "Debit Card",
+      "Free Parking",
+      "Digital Payments Accepted",
+      "Indoor Seating",
+      "Air Conditioned",
+      "Pure Veg"
+    ],
+    "offers": [],
+    "opentable_support": 0,
+    "is_zomato_book_res": 0,
+    "mezzo_provider": "OTHER",
+    "is_book_form_web_view": 0,
+    "book_form_web_view_url": "",
+    "book_again_url": "",
+    "thumb": "",
+    "user_rating": {
+      "aggregate_rating": "4.3",
+      "rating_text": "Very Good",
+      "rating_color": "5BA829",
+      "rating_obj": {
+        "title": {
+          "text": "4.3"
+        },
+        "bg_color": {
+          "type": "lime",
+          "tint": "700"
+        }
+      },
+      "votes": "73867"
+    },
+    "all_reviews_count": 2934,
+    "photos_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+    "photo_count": 1661,
+    "menu_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+    "featured_image": "",
+    "medio_provider": 1,
+    "has_online_delivery": 1,
+    "is_delivering_now": 0,
+    "store_type": "",
+    "include_bogo_offers": true,
+    "deeplink": "zomato://restaurant/18198449",
+    "is_table_reservation_supported": 1,
+    "has_table_booking": 0,
+    "events_url": "https://www.zomato.com/ncr/punjabi-angithi-paschim-vihar-new-delhi/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+    "phone_numbers": "011 40191599, +91 9999613673",
+    "establishment": [
+      "Casual Dining"
+    ],
+    "establishment_types": []
+}
+)

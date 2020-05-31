@@ -1,0 +1,88 @@
+> use coffee_store
+> db.createCollection("products")
+> db.products.insert({_id:"itemId",seqValue:0})
+
+
+function getSequenceNextValue(seqName){
+    var seqDoc  = db.products.findAndModify({
+        query:{_id: seqName},
+        update: {$inc:{seqValue:1}},
+        new:true
+    })
+
+    return seqDoc.seqValue
+}
+
+db.products.insert({
+    _id: getSequenceNextValue("itemId"),
+    name: 'cold coffee',
+    price: 767
+})
+
+db.products.insert({
+    _id: getSequenceNextValue("itemId"),
+    name: 'Hot coffee',
+    price: 34
+})
+
+//////////////////////
+db.zomato.find({query},{projection})
+
+db.zomato.find({city:"Chandigarh"}).pretty()
+db.zomato.find({city:"Delhi"}).pretty()
+db.zomato.find({id:"553"}).pretty()
+
+db.zomato.find({$and:[{city:"Chandigarh"},{city:"Delhi"}]})
+db.zomato.find({$or:[{city:"Chandigarh"},{city:"Delhi"}]}).pretty()
+
+db.zomato.find({city:{$ne:"Delhi"}}).pretty()
+
+db.zomato.find({aggregate_rating:{$gt:"4.5"}}).pretty()
+db.zomato.find({aggregate_rating:{$lt:"4.5"}}).pretty()
+db.zomato.find({aggregate_rating:{$gte:"4.5"}}).pretty()
+db.zomato.find({aggregate_rating:{$gt:"4.5"}}).pretty()
+db.zomato.find({aggregate_rating:{$lte:"4.5"}}).pretty()
+
+
+db.zomato.find({city:[{$ne:"Delhi"},{$ne:"Delhi"}]}).pretty()
+
+db.zomato.find({city:{$in:["Delhi","Mumbai"]}}).pretty()
+db.zomato.find({city:{$ne:["Delhi","Mumbai"]}}).pretty()
+
+db.zomato.find({aggregate_rating:{$in:["4.2","4.5"]}}).pretty()
+
+
+db.zomato.find({city:"Chandigarh"}).pretty()
+
+db.zomato.count()
+db.zomato.count({city:"Delhi",aggregate_rating:"4.2"})
+
+db.zomato.find({city:"Delhi",aggregate_rating:{$in:["4.2","4.1"]}})
+
+db.zomato.find({query},{project})
+
+db.zomato.find({city:"Delhi"},{name:1})
+
+//////
+true == 1
+false == 0
+/////
+
+db.zomato.find({city:"Delhi"},{_id:0,name:1}).pretty()
+
+db.zomato.find({city:"Delhi"},{_id:0,name:0}).pretty()
+
+db.zomato.find({city:"Delhi"},{_id:0}).pretty()
+
+
+db.zomato.find({city:"Delhi"},{_id:0,thumb:0,rating_text:0}).pretty()
+
+db.zomato.find({},{_id:0}).pretty()
+
+
+db.zomato2.find({},{"location.city_id":1})
+db.zomato2.find({"highlights":{$in:["Dinner","Air Conditioned"]}},{_id:0,"name":1}).pretty()
+db.zomato2.count({},{"highlights":1}).pretty()
+
+db.zomato2.find({"highlights":{$in:["Dinner","Air Conditioned"]}},{_id:0,"name":1}).pretty()
+
