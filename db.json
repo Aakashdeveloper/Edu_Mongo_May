@@ -8,8 +8,7 @@ db.zomato.insertMany([
       "aggregate_rating": 4.5,
       "rating_text": "Very Good",
       "min_price": 230,
-      "lat": "45.5345",
-      "long": "33.44"
+      "isActive":true
     },
     {
       "id": "307406",
@@ -19,7 +18,8 @@ db.zomato.insertMany([
       "thumb": "https://b.zmtcdn.com/data/pictures/5/19295175/231f0337cd9140f230d8208ddde923c9.jpg",
       "aggregate_rating": 2.5,
       "rating_text": "Very Good",
-      "min_price": 530
+      "min_price": 530,
+      "isActive":true
     },
     {
       "id": "2008",
@@ -29,7 +29,8 @@ db.zomato.insertMany([
       "thumb": "https://b.zmtcdn.com/data/reviews_photos/15b/d3faa48ac6382d15d60ca96b501dc15b_1570259732.jpg",
       "aggregate_rating": 3.8,
       "rating_text": "Very Good",
-      "min_price": 450
+      "min_price": 450,
+      "isActive":true
     },
     {
       "id": "553",
@@ -39,7 +40,8 @@ db.zomato.insertMany([
       "thumb": "https://b.zmtcdn.com/data/pictures/4/18932104/e90bb17c3b05e7a39251378389afe651.jpg",
       "aggregate_rating": 4.7,
       "rating_text": "Very Good",
-      "min_price": 280
+      "min_price": 280,
+      "isActive":true
     },
     {
       "id": "18453961",
@@ -49,8 +51,10 @@ db.zomato.insertMany([
       "thumb": "https://b.zmtcdn.com/data/pictures/7/18690357/0df7f4ca0c645a68a1657b1e69b015fa.jpg",
       "aggregate_rating": 3.2,
       "rating_text": "Very Good",
-      "min_price": 530
-    },
+      "min_price": 530,
+      "isActive":true
+    }
+  ,
     {
       "id": "35105",
       "name": "McDonald's",

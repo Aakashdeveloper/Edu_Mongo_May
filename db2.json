@@ -1,0 +1,49 @@
+db.zomato2.insertMany([
+    {
+      "id": "6360",
+      "name": "Gulab",
+      "city": "Delhi",
+      "locality": "Pitampura, New Delhi",
+       "aggregate_rating": 4.5
+    },
+    {
+      "id": "18453961",
+      "name": "Food Adda",
+      "locality": "Borivali West",
+      "city": "Mumbai",
+      "aggregate_rating": 3.5
+    },
+    {
+      "id": "12073",
+      "name": "Satguru's Punjabi Rasoi",
+      "locality": "Destination Centre Magarpatta",
+      "city": "Pune",
+      "aggregate_rating": 4.4
+    },
+    {
+      "id": "18731537",
+      "name": "Empire Restaurant",
+      "locality": "Rajajinagar",
+      "city": "Bangalore",
+      "aggregate_rating": 1.5
+    },
+    {
+      "id": "19070793",
+      "name": "JnJ's",
+      "locality": "Sector 28",
+      "city": "Chandigarh",
+      "aggregate_rating": 2.3
+    }
+  ]
+)
+
+db.zomato2.insert(
+    {
+        "id": "307406",
+        "name": "Pandit Ji Parantha Hut",
+        "locality": "Ashok Vihar Phase 2",
+        "city": "Delhi",
+        "aggregate_rating": 3.6,
+       
+      }
+)

@@ -1,0 +1,92 @@
+update
+upsert
+
+db.collectiion.update(
+    <query>,
+    <update>,
+    {
+        upsert:true,
+        multi:true
+    }
+)
+
+
+db.zomato.update(
+    {"id" : "123335"},
+    {
+        $mul:{min_price:5},
+        $set:{
+            locality.pincdoe : 332243,
+            rating_text : "Very Good",
+            "city" : "Pune",
+
+        }
+    },
+    {
+        multi:true
+    }
+)
+
+db.zomato.updateMany(
+    {"id" : "123335"},
+    [
+        {$set:{'rating':3.5}},
+        {$unset:{city:""}}
+    ]
+)
+
+
+
+db.zomato.update(
+    {"city" : "Delhi"},
+    {
+        $set:{
+           "pncode":875647
+
+        }
+    },
+    {
+        multi:true
+    }
+)
+
+
+CRUD
+Create Read Update Delete
+
+db.zomato.remove({"id" : "123335"})
+db.zomato.remove({})
+
+db.zomato.update(
+    {"id" : "18453961"},
+    {
+        $set:{
+           "isActive":false
+
+        }
+    }
+)
+
+ db.zomato.count({isActive:true})
+
+ "true"
+
+
+ db.zomato.find().sort({city:1}).pretty()
+ db.zomato2.find({}).sort({city:1,aggregate_rating:-1}).pretty()
+ db.zomato2.find({}).sort({city:1}).limit(3).pretty()
+
+
+ db.abc.insert({name:'a'})
+
+db.abc.update(
+   { name:'a' },
+   {
+     $set: { item: "apple" },
+     $setOnInsert: { dateAdded: new Date() }
+   },
+   { upsert: true }
+)
+
+
+//////////////
