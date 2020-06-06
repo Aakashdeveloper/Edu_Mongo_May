@@ -93,3 +93,28 @@ db.inventory.insert([
    { "_id" : 6 }
 ])
 
+
+db.artists.aggregate( [
+  // First Stage
+  {
+    $bucket: {
+      groupBy: "$year_born",                        // Field to group by
+      boundaries: [ 1840, 1850, 1860, 1870, 1880 ], // Boundaries for the buckets
+      default: "Other",                             // Bucket id for documents which do not fall into a bucket
+      output: {                                     // Output for each bucket
+        "count": { $sum: 1 },
+        "artists" :
+          {
+            $push: {
+              "name": { $concat: [ "$first_name", " ", "$last_name"] },
+              "year_born": "$year_born"
+            }
+          }
+      }
+    }
+  },
+  // Second Stage
+  {
+    $match: { count: {$gt: 3} }
+  }
+] )
