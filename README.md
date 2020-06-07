@@ -175,3 +175,12 @@ db.holidays.insert([
    { "_id" : 5, year: 2017, name: "Ice Cream Day", date: new Date("2017-07-16") }
 ])
 db.inventory.insertOne({ "_id" : 1, "item" : "ABC1", sizes: [ "S", "M", "L"] })
+
+
+//GraphLoopUp
+{ "_id" : 1, "name" : "Dev" }
+{ "_id" : 2, "name" : "Eliot", "reportsTo" : "Dev" }
+{ "_id" : 3, "name" : "Ron", "reportsTo" : "Eliot" }
+{ "_id" : 4, "name" : "Andrew", "reportsTo" : "Eliot" }
+{ "_id" : 5, "name" : "Asya", "reportsTo" : "Ron" }
+{ "_id" : 6, "name" : "Dan", "reportsTo" : "Andrew" }
