@@ -138,3 +138,18 @@ db.items.insert([
   { "_id" : 2, "item" : "bread", description: "raisin and nut bread", "instock" : 80 },
   { "_id" : 3, "item" : "pecans", description: "candied pecans", "instock" : 60 }
 ])
+
+db.orders.insert([
+  { "_id" : 1, "item" : "almonds", "price" : 12, "ordered" : 2 },
+  { "_id" : 2, "item" : "pecans", "price" : 20, "ordered" : 1 },
+  { "_id" : 3, "item" : "cookies", "price" : 10, "ordered" : 60 }
+])
+
+db.warehouses.insert([
+  { "_id" : 1, "stock_item" : "almonds", warehouse: "A", "instock" : 120 },
+  { "_id" : 2, "stock_item" : "pecans", warehouse: "A", "instock" : 80 },
+  { "_id" : 3, "stock_item" : "almonds", warehouse: "B", "instock" : 60 },
+  { "_id" : 4, "stock_item" : "cookies", warehouse: "B", "instock" : 40 },
+  { "_id" : 5, "stock_item" : "cookies", warehouse: "A", "instock" : 80 }
+])
+
