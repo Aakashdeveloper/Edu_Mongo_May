@@ -133,3 +133,8 @@ db.members.insert( [
    { _id: 6, name: "giraffe2", joined: new Date("2018-12-01"), status: "D" }
 ])
 
+db.items.insert([
+  { "_id" : 1, "item" : "almonds", description: "almond clusters", "instock" : 120 },
+  { "_id" : 2, "item" : "bread", description: "raisin and nut bread", "instock" : 80 },
+  { "_id" : 3, "item" : "pecans", description: "candied pecans", "instock" : 60 }
+])
