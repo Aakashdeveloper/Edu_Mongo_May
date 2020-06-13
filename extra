@@ -22,3 +22,8 @@ while()
 function add(){}
 
 var add = ( ) => {}
+
+sudo mkdir /System/Volumes/Data/data/rs2
+mongod --port 2001 --dbpath /System/Volumes/Data/data/rs1 --replSet --aakash --oplogSize 128
+
+sudo mongod --port 2002 --dbpath /System/Volumes/Data/data/rs2 --replSet --aakash --oplogSize 128
