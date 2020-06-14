@@ -1,0 +1,45 @@
+
+sudo mkdir /System/Volumes/Data/data/shard1
+sudo mkdir /System/Volumes/Data/data/shard2
+sudo mkdir /System/Volumes/Data/data/shard3
+
+
+sudo mongod --shardsvr --dbpath /System/Volumes/Data/data/shard1  --port 2001 
+
+sudo mongod --shardsvr --dbpath /System/Volumes/Data/data/shard2 --port 2002 
+
+sudo mongod --shardsvr --dbpath /System/Volumes/Data/data/shard3 --port 2003
+
+//Config Server
+sudo mkdir /System/Volumes/Data/data/config1
+sudo mkdir /System/Volumes/Data/data/config2
+sudo mkdir /System/Volumes/Data/data/config3
+
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config1 --port 2011 --replSet "rs0"
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config3 --port 2013 --replSet "rs2"
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config2 --port 2012 --replSet "rs1"
+
+sudo mongos --logpath "mongos-1.log" --port 1000 --configdb localhost:2011,localhost:2012,localhost:2013 --fork
+
+
+mongos --logpath "mongos-1.log" --configdb localhost:57040,localhost:57041,localhost:57042 --fork
+
+mongo --port 1000
+
+
+
+////////////////////////////////
+mongoexport --db  nodeevng --collection first  --type=csv  --fields _id,name,class   --out  Downloads/first.csv
+
+
+mongoexport --host="localhost:27017" --collection=first --db=nodeevng --out=first.json
+
+
+mongoimport --db=users --collection=contacts --file=first.json
+
+mongodump
+mongodump -d=test -c=records -q='{ "a": { "$gte": 3 }, "date": { "$lt": { "$date": "2016-01-01T00:00:00.000Z" } } }'
+
+mongorestore  dump/
+
+bsondump --outFile=collection.json collection.bson

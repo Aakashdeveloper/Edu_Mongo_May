@@ -1,0 +1,13 @@
+2020-06-14T08:58:28.541+0530 I CONTROL  [initandlisten] MongoDB starting : pid=97345 port=27018 dbpath=/System/Volumes/Data/data/db 64-bit host=Avyaans-MacBook-Pro.local
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] db version v3.6.5
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] git version: a20ecd3e3a174162052ff99913bc2ca9a839d618
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2s  28 May 2019
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] allocator: system
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] modules: none
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] build environment:
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] options: { config: "mymongo.conf", net: { port: 27018 }, storage: { dbPath: "/System/Volumes/Data/data/db" }, systemLog: { destination: "file", path: "mongo1.log" } }
+2020-06-14T08:58:28.542+0530 I STORAGE  [initandlisten] exception in initAndListen: DBPathInUse: Unable to lock the lock file: /System/Volumes/Data/data/db/mongod.lock (Resource temporarily unavailable). Another mongod instance is already running on the /System/Volumes/Data/data/db directory, terminating
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] now exiting
+2020-06-14T08:58:28.542+0530 I CONTROL  [initandlisten] shutting down with code:100
