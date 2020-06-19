@@ -15,16 +15,25 @@ sudo mkdir /System/Volumes/Data/data/config1
 sudo mkdir /System/Volumes/Data/data/config2
 sudo mkdir /System/Volumes/Data/data/config3
 
-sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config1 --port 2011 --replSet "rs0"
-sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config3 --port 2013 --replSet "rs2"
-sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config2 --port 2012 --replSet "rs1"
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config1 --port 2011 --replSet rs0
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config3 --port 2013 --replSet rs0
+sudo mongod --configsvr --dbpath /System/Volumes/Data/data/config2 --port 2012 --replSet rs0
 
-sudo mongos --logpath "mongos-1.log" --port 1000 --configdb localhost:2011,localhost:2012,localhost:2013 --fork
+rs.initiate(
+  {
+    _id: "rs0",
+    configsvr: true,
+    members: [
+      { _id : 0, host : "localhost:2011" },
+      { _id : 1, host : "localhost:2012" },
+      { _id : 2, host : "localhost:2013" }
+    ]
+  }
+)
 
+mongos --configdb "rs0/localhost:2011,localhost:2012,localhost:2013" --fork --logpath log.mongos0 --port 27200
 
-mongos --logpath "mongos-1.log" --configdb localhost:57040,localhost:57041,localhost:57042 --fork
-
-mongo --port 1000
+mongo --port 27200
 
 
 
